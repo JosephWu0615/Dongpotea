@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useAppSelector, useAppDispatch } from '../hooks/redux';
 import { addToCart } from '../store/localCartSlice';
 import { theme } from '../assets/styles/theme';
@@ -177,7 +177,7 @@ const TabContent = styled.div`
 
 export const ProductDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const { language } = useAppSelector((state) => state.ui);
   const [quantity, setQuantity] = useState(1);

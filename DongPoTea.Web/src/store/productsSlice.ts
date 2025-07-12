@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { productService } from '../services/products/productService';
-import { Product, ProductListItem, ProductFilters, PaginatedResponse, Category } from '../types/product';
+import { Product, ProductListItem, ProductFilters, Category } from '../types/product';
 import { handleApiError } from '../services/api/config';
 
 interface ProductsState {

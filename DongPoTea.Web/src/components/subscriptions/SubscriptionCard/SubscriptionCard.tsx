@@ -263,7 +263,7 @@ interface SubscriptionCardProps {
 }
 
 export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({ plan, language, variant }) => {
-  const savings = plan.originalPrice ? plan.originalPrice - plan.price : 0;
+  // const savings = plan.originalPrice ? plan.originalPrice - plan.price : 0;
 
   const highlights = [
     {
